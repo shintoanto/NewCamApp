@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CamEditor</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="take_selfie">Take selfie</string>
+    <string name="edit">Edit</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.shinto_pa.cameditor.HomeScreen"
+        android:label="home_screen_fragment"
+        tools:layout="@layout/home_screen_fragment" >
+        <action
+            android:id="@+id/action_homeScreen_to_editScreen"
+            app:destination="@id/editScreen" />
+        <argument
+            android:name="imagePassing"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/editScreen"
+        android:name="com.shinto_pa.cameditor.EditScreen"
+        android:label="edit_screen_fragment"
+        tools:layout="@layout/edit_screen_fragment" >
+        <action
+            android:id="@+id/action_editScreen_to_homeScreen2"
+            app:destination="@id/homeScreen" />
+    </fragment>
+</navigation>
